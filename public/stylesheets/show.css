@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(to right,black,rgb(11, 71, 81));
+}
+button{
+    border: 2px rgb(5, 81, 82) solid;
+    background:rgba(20, 39, 42,0.5);
+    color: white;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: beige;
+    height: 100vh;
+    width: 100vw;
+    gap: 2rem;
+    text-align: center;
+}
+.show h3{
+    font-size: xx-large;
+}
+button{
+    padding: 0.8rem;
+    border-radius: 25px;
+
+}
+a{
+    color:rgb(92, 143, 237);
+    font-weight: 100;
+}
+p{
+    padding-top: 10vh;
+    width: 80vw;
+    height: 40vmin;
+}
+a:hover{
+     color:rgb(146, 178, 238);
+}
+a:active{
+     color:rgb(38, 103, 224);
+}

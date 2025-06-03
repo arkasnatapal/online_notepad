@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(to right,black,rgb(11, 71, 81));
+}
+button{
+    border: 2px rgb(5, 81, 82) solid;
+    background:rgba(20, 39, 42,0.5);
+    color: white;
+}
+.caution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: beige;
+    height: 100vh;
+    width: 100vw;
+    gap: 2rem;
+}
+.caution h3{
+    font-size: xx-large;
+}
+button{
+    padding: 0.8rem;
+    border-radius: 25px;
+
+}
+button:hover{
+    background-color:rgba(38, 73, 78, 0.9);
+    border: 2px rgb(16, 108, 110) solid;
+}
+button:active{
+    background-color:rgba(17, 111, 170, 0.9);
+    border: 2px rgb(9, 75, 77) solid;
+}

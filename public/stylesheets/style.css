@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background:linear-gradient(to right,black,rgb(11, 71, 81));
+}
+span {
+    color: rgb(228, 67, 67);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: beige;
+    height: 100vh;
+    width: 100vw;
+    gap: 2rem;
+}
+.main h1{
+    font-size: xx-large;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.256rem;
+}
+.heading{
+    width: 80vw;
+    height:50px;
+    padding: 20px;
+    border: solid rgb(23, 123, 165) 2px;
+    border-radius: 20px;
+}
+.details{
+    width: 80vw;
+    height:20vh;
+    padding: 10px;
+    text-wrap:inherit;
+    border: solid rgb(30, 90, 131) 2px;
+    border-radius: 20px;
+}
+.submit{
+    width: 10vw;
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: solid rgb(30, 90, 131) 2px;
+    border-radius: 20px;
+    background-color: rgb(45, 93, 77);
+}
+.submit:hover{
+    background-color: rgb(26, 148, 159);
+}
+.submit:hover{
+    background-color: rgb(26, 148, 159);
+}
+
+a{
+    color:rgb(92, 237, 179);
+    font-weight:100;
+}
+.edit{
+    color:rgb(92, 189, 237);
+    font-weight:100;
+}
+.delete{
+    color:rgb(251, 81, 81);
+    font-weight:100;
+}
+.hidden{
+    display: none;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 9 items per row */
+    gap: 20px;
+    padding: 35px;
+    min-height: 150px;
+    position: relative;
+}
+
+.tasks {
+     background-color: rgb(11, 94, 80);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.tasks:hover {
+    transform: translateY(-4px);
+}
+
+.msg {
+    grid-column: 1 / -1; /* spans full row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 1.5rem;
+    color: #888;
+}

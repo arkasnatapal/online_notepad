@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main">
+        <h1> Welcome to <span>Pen It Down</span></h1>
+        <div class="inputs">
+            <form action="/create" method="post">
+                <input class="heading" type="text" placeholder="Enter the Heading" name="title">
+                <input class="details" type="text" placeholder="Enter your Note" name="details">
+                <input class="submit" type="submit" value="Create Task" readonly>
+            </form>
+        </div>
+        <div class="datas">
+    <div class="task">
+        <% if (files.length > 0) { %>
+            <% files.forEach((val) => { %>
+                <div class="tasks">
+                    <h3><%= val %></h3> <!-- file's name --> 
+                    <a href="/files/<%= val %>">Read</a>
+                    <a class="edit" href="/edit/<%= val %>">Edit</a>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <div class="msg">
+                <h2>No tasks yet</h2>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
